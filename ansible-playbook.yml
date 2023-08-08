@@ -12,7 +12,7 @@
     become_user : root
 
   - name : Start Docker Service
-    command : sudo systemctl restart docker
+    command : sudo systemctl start docker
     become : yes
     become_user : root
 
